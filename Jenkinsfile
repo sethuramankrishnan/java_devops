@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('compile') {
       steps {
-        sh 'sh \'mvn -B -DskipTests clean package\''
+        sh 'sh "mvn -B -DskipTests clean package -f webAppExample/pom.xml"'
       }
     }
   }
