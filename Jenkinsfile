@@ -1,11 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'maven:3-alpine'
-      args 'args \'-v /var/lib/jenkins/.m2:/root/.m2\''
-    }
-
-  }
+  agent any
   stages {
     stage('compile') {
       steps {
