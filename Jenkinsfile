@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('compile') {
       steps {
-        sh '/var/lib/jenkins/maven/mvn -version'
+        sh 'echo "mvn -version"'
       }
     }
     stage('test') {
