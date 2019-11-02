@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('compile') {
       steps {
-        sh 'sh "mvn compile"'
+        sh 'sh \'mvn compile -f webAppExample/pom.xml\''
       }
     }
     stage('test') {
